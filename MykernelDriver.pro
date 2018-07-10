@@ -15,6 +15,10 @@ INCLUDEPATH += \
     /usr/lib/modules/$${KERNEL_RELEASE}/build/include/linux \
     /usr/lib/modules/$${KERNEL_RELEASE}/build/arch/x86/include
 
+DEFINES += \
+    __KERNEL__ \
+    KBUILD_MODNAME=\"\\\"\\\"\"
+
 OTHER_FILES += \
     src/Makefile
 
