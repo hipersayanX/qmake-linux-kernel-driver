@@ -1,0 +1,16 @@
+Makefile
+!src/Makefile
+*.pro.user
+*.cmd
+*.mk
+*.mod
+*.mod.c
+*.mod.o
+*.o
+*.ko
+*.so
+*.so.*
+Module.symvers
+modules.order
+.qmake.stash
+*.kate-swp
