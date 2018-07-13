@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/kernel.h>
 #include <linux/init.h>
+#include <linux/kernel.h>
+#include <linux/module.h>
 
 static int __init mykerneldriver_init(void)
 {

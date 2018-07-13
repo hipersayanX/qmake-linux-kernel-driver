@@ -1,6 +1,6 @@
 CONFIG -= qt
 
-TARGET = MyKernelDriver
+TARGET = mykerneldriver
 TEMPLATE = lib
 
 lupdate_only {
@@ -24,7 +24,7 @@ OTHER_FILES += \
 
 DUMMY_FILES = .
 makedriver.input = DUMMY_FILES
-makedriver.output = DUMMY_FILES/mykerneldriver.ko
+makedriver.output = src/$${TARGET}.ko
 makedriver.commands = cd src; make; cd ..
 makedriver.clean = src/*.ko src/*.o src/*.mod.c src/modules.order src/Module.symvers
 makedriver.CONFIG += no_link
